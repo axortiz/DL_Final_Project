@@ -3,14 +3,14 @@ from PIL import Image
 
 # Define your paths
 # Directory where the original images are stored
-input_dir = '/Users/lexoortiz/Desktop/CS/CS307/DL_Final_Project/data/train/boxing/'
+input_dir = '/Users/lexoortiz/Desktop/CS/CS307/DL_Final_Project/data/test/boxing/'
 # Directory where the new images will be saved
-output_dir = '/Users/lexoortiz/Desktop/CS/CS307/DL_Final_Project/data/train/boxing/'
+output_dir = '/Users/lexoortiz/Desktop/CS/CS307/DL_Final_Project/data/test/boxing/'
 
 # Iterate through each image
-for i in range(1, 117):  # Assuming you have 116 images numbered 001.jpg to 116.jpg
+for i in range(1, 6):  # Assuming you have 116 images numbered 001.jpg to 116.jpg
     # Format the image filename with leading zeros
-    filename = f'{i:03d}.jpg'
+    filename = f'{i:01d}.jpg'
     image_path = os.path.join(input_dir, filename)
 
     # Check if the image already contains an underscore in the filename
@@ -40,9 +40,9 @@ for i in range(1, 117):  # Assuming you have 116 images numbered 001.jpg to 116.
             "RGB", (Image.new("L", b.size), Image.new("L", b.size), b))
 
         # Generate new filenames in the format 001_r.jpg, 001_g.jpg, 001_b.jpg
-        r_image_path = os.path.join(output_dir, f'{i:03d}_r.jpg')
-        g_image_path = os.path.join(output_dir, f'{i:03d}_g.jpg')
-        b_image_path = os.path.join(output_dir, f'{i:03d}_b.jpg')
+        r_image_path = os.path.join(output_dir, f'{i:01d}_r.jpg')
+        g_image_path = os.path.join(output_dir, f'{i:01d}_g.jpg')
+        b_image_path = os.path.join(output_dir, f'{i:01d}_b.jpg')
 
         # Save the images
         r_image.save(r_image_path)
