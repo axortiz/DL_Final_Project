@@ -1,6 +1,15 @@
 import os
 from PIL import Image
 
+'''
+All images are of size 150 x 150 x 3 according to the kaggle data description.
+
+On Kaggle:
+Sports Classification | EfficientNetB3 | 98.6%
+
+by ABDALLAH WAGIH IBRAHIM · 2Y AGO
+'''
+
 # Define your paths
 # Directory where the original images are stored
 input_dir = '/Users/lexoortiz/Desktop/CS/CS307/DL_Final_Project/data/test/boxing/'
