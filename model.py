@@ -1,112 +1,173 @@
 import pandas as pd
 import numpy as np
-from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import train_test_split
-import tensorflow as tf
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+from sklearn.impute import SimpleImputer
+import torch.nn as nn 
+import torch
+from torch.utils.data import Dataset, DataLoader
 
-# Function to clean data
+import matplotlib.pyplot as plt
 
+def load_and_process_data(filepath):
+    # Load data
+    df = pd.read_csv(filepath)
+    
+    # Replace 'null' strings with NaN
+    df.replace('null', np.nan, inplace=True)
+    
+    # Convert numeric columns to appropriate data types
+    numeric_columns = [
+        'f_boxer_age', 'f_boxer_height', 'f_boxer_reach',
+        'f_boxer_won', 'f_boxer_lost', 'f_boxer_KOs',
+        's_boxer_age', 's_boxer_height', 's_boxer_reach',
+        's_boxer_won', 's_boxer_lost', 's_boxer_KOs',
+        'matchRounds'
+    ]
+    df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric, errors='coerce')
+    
+    # Handle missing values
+    imputer = SimpleImputer(strategy='mean')
+    df[numeric_columns] = imputer.fit_transform(df[numeric_columns])
+    
+    # Encode categorical variables
+    label_encoders = {}
+    categorical_columns = ['f_boxer_result', 'fightEnd']
+    for col in categorical_columns:
+        le = LabelEncoder()
+        df[col] = le.fit_transform(df[col].astype(str))
+        label_encoders[col] = le
+    
+    # Encode target variable with fixed classes
+    def encode_winner(row):
+        if row['winner'] == row['f_boxer']:
+            return 0  # First boxer wins
+        elif row['winner'] == row['s_boxer']:
+            return 1  # Second boxer wins
+        else:
+            return 2  # Draw
 
-def clean_data(df):
-    # Replace 'null', 'Null', 'not listed', 'Unknown' with NaN
-    df = df.replace(['null', 'Null', 'not listed', 'Unknown',
-                    'unknown', 'Not listed'], np.nan)
+    df['winner_encoded'] = df.apply(encode_winner, axis=1)
 
-    # Convert numerical columns to numeric dtype
-    num_cols = ['f_boxer_age', 'f_boxer_height', 'f_boxer_reach', 'f_boxer_won', 'f_boxer_lost', 'f_boxer_KOs',
-                's_boxer_age', 's_boxer_height', 's_boxer_reach', 's_boxer_won', 's_boxer_lost', 's_boxer_KOs', 'matchRounds']
-    for col in num_cols:
-        df[col] = pd.to_numeric(df[col], errors='coerce')
+    # Drop boxers' names
+    df = df.drop(['f_boxer', 's_boxer'], axis=1)
 
-    # Fill missing numerical values with mean
-    for col in num_cols:
-        df[col] = df[col].fillna(df[col].mean())
-
-    # For categorical columns, fill missing values with 'Unknown'
-    cat_cols = ['f_boxer', 's_boxer', 'f_boxer_result', 'fightEnd', 'winner']
-    for col in cat_cols:
-        df[col] = df[col].fillna('Unknown')
-
-    return df
-
-# Function to preprocess data
-
-
-def preprocess_data(df):
-    # Clean data
-    df = clean_data(df)
-
-    # Encode 'winner' column: 1 if 'winner' == 'f_boxer', 0 if 'winner' == 's_boxer'
-    df['winner_encoded'] = df.apply(lambda row: 1 if row['winner'] == row['f_boxer'] else (
-        0 if row['winner'] == row['s_boxer'] else np.nan), axis=1)
-
-    # Drop rows with NaN in 'winner_encoded'
-    df = df.dropna(subset=['winner_encoded'])
-
-    # Drop unnecessary columns
-    df = df.drop(columns=['f_boxer', 's_boxer',
-                 'f_boxer_result', 'fightEnd', 'winner'])
-
-    # Separate features and target
-    X = df.drop(columns=['winner_encoded'])
-    y = df['winner_encoded']
-
+    
+    # Features and target
+    X = df.drop(['winner', 'winner_encoded'], axis=1).values
+    y = df['winner_encoded'].values
+    
     return X, y
 
 # Function to create the model
 
+class BoxingDataset(Dataset):
+    def __init__(self, X, y):
+        self.X = torch.tensor(X, dtype=torch.float32)
+        self.y = torch.tensor(y, dtype=torch.long)
+        
+    def __len__(self):
+        return len(self.y)
+    
+    def __getitem__(self, idx):
+        return self.X[idx], self.y[idx]
 
-def create_model(input_shape):
-    model = Sequential([
-        Dense(128, activation='relu', input_shape=(input_shape,)),
-        Dropout(0.2),
-        Dense(64, activation='relu'),
-        Dropout(0.2),
-        Dense(32, activation='relu'),
-        Dense(1, activation='sigmoid')  # Use sigmoid for binary classification
-    ])
+class BoxingMatchPredictor(nn.Module):
+    def __init__(self, input_size, num_classes):
+        super(BoxingMatchPredictor, self).__init__()
+        self.network = nn.Sequential(
+            nn.Linear(input_size, 128),
+            nn.ReLU(),
+            nn.Dropout(0.3),
+            nn.Linear(128, 64),
+            nn.ReLU(),
+            nn.Dropout(0.3),
+            nn.Linear(64, num_classes)
+        )
+        
+    def forward(self, x):
+        return self.network(x)
 
-    model.compile(optimizer='adam',
-                  loss='binary_crossentropy',
-                  metrics=['accuracy'])
-    return model
+
+X_train, y_train  = load_and_process_data('data_src/train.csv')
+X_val, y_val = load_and_process_data('data_src/validation.csv')
+
+train_dataset = BoxingDataset(X_train, y_train)
+val_dataset = BoxingDataset(X_val, y_val)
+
+train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
+val_loader = DataLoader(val_dataset, batch_size=32)
+
+# Initialize model
+input_size = X_train.shape[1]
+num_classes = 3  # Fixed number of classes
+model = BoxingMatchPredictor(input_size, num_classes)
+
+# Loss and optimizer
+criterion = nn.CrossEntropyLoss()
+optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+
+best_val_acc = 0.0
+best_model_state = None
 
 
-# Load datasets
-train_df = pd.read_csv('Training.csv')
-val_df = pd.read_csv('validation.csv')
+train_losses = []
+val_losses = []
 
-# Preprocess training data
-train_X, train_y = preprocess_data(train_df)
+num_epochs = 50
+# Training loop 
+for epoch in range(num_epochs):
+    model.train() 
 
-# Fit scaler on training data
-scaler = StandardScaler()
-train_X_scaled = scaler.fit_transform(train_X)
+    running_loss = 0.0
+    for X_batch, y_batch in train_loader:
+        optimizer.zero_grad()
+        outputs = model(X_batch)
+        loss = criterion(outputs, y_batch)
+        loss.backward()
+        optimizer.step()
+        running_loss += loss.item() * X_batch.size(0)
+    
+    epoch_loss = running_loss / len(train_loader.dataset)
+    train_losses.append(epoch_loss)
 
-# Preprocess validation data
-val_X, val_y = preprocess_data(val_df)
 
-# Use the same scaler to transform validation data
-val_X_scaled = scaler.transform(val_X)
+    # Validation 
+    model.eval() 
+    val_running_loss = 0.0 
+    correct = 0 
+    total = 0 
 
-# Create the model
-input_shape = train_X_scaled.shape[1]
-model = create_model(input_shape)
+    with torch.no_grad():
+        for X_val_batch, y_val_batch in val_loader:
+            outputs = model(X_val_batch)
+            val_loss = criterion(outputs, y_val_batch)
+            val_running_loss += val_loss.item() * X_val_batch.size(0)
+            _, predicted = torch.max(outputs, 1)
+            total += y_val_batch.size(0)
+            correct += (predicted == y_val_batch).sum().item()
+        
+    val_loss = val_running_loss / len(val_loader.dataset)
+    val_losses.append(val_loss)
+    val_acc = correct / total
 
-# Train the model
-history = model.fit(train_X_scaled, train_y, epochs=50,
-                    batch_size=16, validation_data=(val_X_scaled, val_y))
+    
+    print(f"Number of correct predictions: {correct}, Total predictions: {total}")
+    print(f'Epoch {epoch+1}/{num_epochs}, Training Loss: {epoch_loss:.4f}, Validation Loss: {val_loss:.4f}, Validation Accuracy: {val_acc:.4f}')
 
-# Evaluate the model
-val_loss, val_accuracy = model.evaluate(val_X_scaled, val_y)
-print(f"Validation Accuracy: {val_accuracy}")
+    if val_acc > best_val_acc:
+        best_val_acc = val_acc
+        best_model_state = model.state_dict()
+        torch.save(best_model_state, 'best_model.pth')
+        print('Best model saved')
 
-# Make predictions
-predictions = model.predict(val_X_scaled)
-predicted_classes = (predictions > 0.5).astype("int32")
-
-# Print the predicted and actual classes
-print("Predicted classes:", predicted_classes.flatten())
-print("Actual classes:", val_y.values)
+    
+# Plot the training and validation loss
+plt.figure(figsize=(10, 6))
+plt.plot(range(1, num_epochs+1), train_losses, label='Training Loss', marker='o')
+plt.plot(range(1, num_epochs+1), val_losses, label='Validation Loss', marker='o')
+plt.title('Training and Validation Loss over Epochs')
+plt.xlabel('Epoch')
+plt.ylabel('Loss')
+plt.legend()
+plt.grid(True)
+plt.show()
