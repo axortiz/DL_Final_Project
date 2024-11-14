@@ -14,6 +14,17 @@ def load_and_process_data(filepath):
     
     # Replace 'null' strings with NaN
     df.replace('null', np.nan, inplace=True)
+
+    # Encode target variable with fixed classes
+    def encode_winner(row):
+        if row['f_boxer_result'] == "won":
+            return 0  # First boxer wins
+        elif row['f_boxer_result'] == "lost":
+            return 1  # Second boxer wins
+        else:
+            return 2  # Draw
+
+    df['winner_encoded'] = df.apply(encode_winner, axis=1)
     
     # Convert numeric columns to appropriate data types
     numeric_columns = [
@@ -37,16 +48,6 @@ def load_and_process_data(filepath):
         df[col] = le.fit_transform(df[col].astype(str))
         label_encoders[col] = le
     
-    # Encode target variable with fixed classes
-    def encode_winner(row):
-        if row['winner'] == row['f_boxer']:
-            return 0  # First boxer wins
-        elif row['winner'] == row['s_boxer']:
-            return 1  # Second boxer wins
-        else:
-            return 2  # Draw
-
-    df['winner_encoded'] = df.apply(encode_winner, axis=1)
 
     # Drop boxers' names
     df = df.drop(['f_boxer', 's_boxer'], axis=1)
