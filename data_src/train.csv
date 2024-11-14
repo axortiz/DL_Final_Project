@@ -1,90 +1,178 @@
 f_boxer,s_boxer,f_boxer_result,f_boxer_age,f_boxer_height,f_boxer_reach,f_boxer_won,f_boxer_lost,f_boxer_KOs,s_boxer_age,s_boxer_height,s_boxer_reach,s_boxer_won,s_boxer_lost,s_boxer_KOs,matchRounds,fightEnd,winner
-Danny Batchelder,Kubrat Pulev,lost,33,185.0,191.0,25,7,12,28,194,202.0,6,0,4,2.0,KO/TKO,Kubrat Pulev
+Kubrat Pulev,Danny Batchelder,won,28,194,202.0,6,0,4,33,185.0,191.0,25,7,12,2.0,KO/TKO,Kubrat Pulev
 Kubrat Pulev,Kevin Johnson,won,35,194,202.0,24,1,13,37,191.0,208.0,30,7,14,2.0,UD,Kubrat Pulev
-Tony Thompson,Kubrat Pulev,lost,41,196.0,207.0,38,3,26,32,194,202.0,17,0,9,2.0,UD,Kubrat Pulev
-Michael Sprott,Kubrat Pulev,lost,36,187.0,199.4,36,17,17,30,194,202.0,14,0,6,9.0,RTD,Kubrat Pulev
-Alexander Ustinov,Kubrat Pulev,lost,35,202.0,199.4,27,0,21,31,194,202.0,16,0,8,1.0,KO/TKO,Kubrat Pulev
-Kubrat Pulev,Gbenga Oluokun,won,28,194,202.0,2,0,2,26,185.0,199.4,17,2,10,6.0,UD,Kubrat Pulev
-George Arias,Kubrat Pulev,lost,41,181.0,199.4,56,13,42,34,194,202.0,20,1,11,8.0,UD,Kubrat Pulev
+Kubrat Pulev,Tony Thompson,won,32,194,202.0,17,0,9,41,196.0,207.0,38,3,26,2.0,UD,Kubrat Pulev
+Kubrat Pulev,Michael Sprott,won,30,194,202.0,14,0,6,36,187.0,199.414634146341,36,17,17,9.0,RTD,Kubrat Pulev
+Kubrat Pulev,Alexander Ustinov,won,31,194,202.0,16,0,8,35,202.0,199.414634146341,27,0,21,1.0,KO/TKO,Kubrat Pulev
+Kubrat Pulev,Gbenga Oluokun,won,28,194,202.0,2,0,2,26,185.0,199.414634146341,17,2,10,6.0,UD,Kubrat Pulev
+Kubrat Pulev,George Arias,won,34,194,202.0,20,1,11,41,181.0,199.414634146341,56,13,42,8.0,UD,Kubrat Pulev
 Kubrat Pulev,Maurice Harris,won,34,194,202.0,21,1,11,39,193.0,203.0,26,20,11,1.0,KO/TKO,Kubrat Pulev
-Derric Rossy,Kubrat Pulev,lost,30,191.0,194.0,25,3,14,30,194,202.0,11,0,5,5.0,KO/TKO,Kubrat Pulev
+Kubrat Pulev,Derric Rossy,won,30,194,202.0,11,0,5,30,191.0,194.0,25,3,14,5.0,KO/TKO,Kubrat Pulev
 Kubrat Pulev,Ivica Perkovic,won,32,194,202.0,19,0,10,39,193.0,193.0,20,23,15,3.0,RTD,Kubrat Pulev
-Evgeny Orlov,Kubrat Pulev,lost,31,207.0,199.4,11,6,8,28,194,202.0,7,0,5,7.0,DQ,Kubrat Pulev
-Matt Skelton,Kubrat Pulev,lost,43,191.0,199.4,22,4,19,28,194,202.0,4,0,2,4.0,KO/TKO,Kubrat Pulev
-Kubrat Pulev,Bogdan Dinu,won,37,194,202.0,26,1,13,32,196.0,199.4,18,1,14,7.0,KO/TKO,Kubrat Pulev
-Florian Benche,Kubrat Pulev,lost,27,190.0,199.4,2,3,0,28,194,202.0,0,0,0,2.0,KO/TKO,Kubrat Pulev
-Kubrat Pulev,Zack Page,won,28,194,202.0,3,0,2,36,183.0,199.4,19,25,7,6.0,UD,Kubrat Pulev
-Paolo Vidoz,Kubrat Pulev,lost,40,191.0,199.4,26,9,15,29,194,202.0,9,0,5,8.0,UD,Kubrat Pulev
+Kubrat Pulev,Evgeny Orlov,won,28,194,202.0,7,0,5,31,207.0,199.414634146341,11,6,8,7.0,DQ,Kubrat Pulev
+Kubrat Pulev,Matt Skelton,won,28,194,202.0,4,0,2,43,191.0,199.414634146341,22,4,19,4.0,KO/TKO,Kubrat Pulev
+Kubrat Pulev,Bogdan Dinu,won,37,194,202.0,26,1,13,32,196.0,199.414634146341,18,1,14,7.0,KO/TKO,Kubrat Pulev
+Kubrat Pulev,Florian Benche,won,28,194,202.0,0,0,0,27,190.0,199.414634146341,2,3,0,2.0,KO/TKO,Kubrat Pulev
+Kubrat Pulev,Zack Page,won,28,194,202.0,3,0,2,36,183.0,199.414634146341,19,25,7,6.0,UD,Kubrat Pulev
+Kubrat Pulev,Paolo Vidoz,won,29,194,202.0,9,0,5,40,191.0,199.414634146341,26,9,15,8.0,UD,Kubrat Pulev
+Wladimir Klitschko,Kubrat Pulev,won,38,198,206.0,62,3,52,33,194.0,202.0,20,0,11,5.0,KO/TKO,Wladimir Klitschko
 Kubrat Pulev,Maksym Pedyura,won,30,194,202.0,12,0,6,33,194.0,196.0,13,1,11,8.0,UD,Kubrat Pulev
 Kubrat Pulev,Joey Abell,won,32,194,202.0,18,0,9,32,193.0,193.0,29,6,28,4.0,RTD,Kubrat Pulev
-Travis Walker,Kubrat Pulev,lost,32,194.0,208.0,38,6,30,30,194,202.0,13,0,6,2.0,UD,Kubrat Pulev
-Yaroslav Zavorotnyi,Kubrat Pulev,lost,36,193.0,191.0,14,5,12,29,194,202.0,10,0,5,8.0,UD,Kubrat Pulev
+Kubrat Pulev,Travis Walker,won,30,194,202.0,13,0,6,32,194.0,208.0,38,6,30,2.0,UD,Kubrat Pulev
+Kubrat Pulev,Yaroslav Zavorotnyi,won,29,194,202.0,10,0,5,36,193.0,191.0,14,5,12,8.0,UD,Kubrat Pulev
 Kubrat Pulev,Samuel Peter,won,35,194,202.0,23,1,12,36,188.0,196.0,36,5,29,3.0,RTD,Kubrat Pulev
 Kubrat Pulev,Dominick Guinn,won,29,194,202.0,8,0,5,35,188.0,198.0,33,6,22,8.0,UD,Kubrat Pulev
 Kubrat Pulev,Hughie Fury,won,37,194,202.0,25,1,13,24,198.0,203.0,21,1,11,2.0,UD,Kubrat Pulev
-Rydell Booker,Kubrat Pulev,lost,38,191.0,201.0,26,2,13,38,194,202.0,27,1,14,0.0,UD,Kubrat Pulev
-Tyson Fury,John McDermott,won,21,206,216.0,10,0,8,30,191.0,199.4,25,6,16,9.0,KO/TKO,Tyson Fury
-Scott Belshaw,Tyson Fury,lost,23,201.0,199.4,10,1,7,20,206,216.0,5,0,5,2.0,KO/TKO,Tyson Fury
-Hans-Joerg Blasko,Tyson Fury,lost,36,195.0,199.4,9,3,6,21,206,216.0,9,0,7,1.0,KO/TKO,Tyson Fury
-Steve Cunningham,Tyson Fury,lost,36,190.0,208.0,25,5,12,24,206,216.0,20,0,14,7.0,KO/TKO,Tyson Fury
-Christian Hammer,Tyson Fury,lost,27,189.0,198.0,17,3,10,26,206,216.0,23,0,17,8.0,RTD,Tyson Fury
-Neven Pajkic,Tyson Fury,lost,34,191.0,199.4,16,0,5,23,206,216.0,16,0,11,3.0,KO/TKO,Tyson Fury
-Tyson Fury,Mathew Ellis,won,20,206,216.0,4,0,4,35,182.0,199.4,20,6,9,1.0,KO/TKO,Tyson Fury
-Otto Wallin,Tyson Fury,lost,28,197.0,198.0,20,0,13,31,206,216.0,28,0,20,2.0,UD,Tyson Fury
-Tyson Fury,Bela Gyongyosi,won,20,206,216.0,0,0,0,22,192.0,199.4,3,9,1,1.0,KO/TKO,Tyson Fury
-Tyson Fury,Marcelo Nascimento,won,22,206,216.0,13,0,9,30,196.0,199.4,13,0,11,5.0,KO/TKO,Tyson Fury
-Kevin Johnson,Tyson Fury,lost,33,191.0,208.0,28,2,13,24,206,216.0,19,0,14,2.0,UD,Tyson Fury
-Tyson Fury,Nicolai Firtha,won,23,206,216.0,15,0,10,32,198.0,199.4,20,8,8,5.0,KO/TKO,Tyson Fury
-Tom Schwarz,Tyson Fury,lost,25,197.0,199.4,24,0,16,30,206,216.0,27,0,19,2.0,KO/TKO,Tyson Fury
-Francesco Pianeta,Tyson Fury,lost,33,196.0,203.0,35,4,21,30,206,216.0,26,0,19,0.0,Unknown,Tyson Fury
-Tyson Fury,Daniil Peretyatko,won,20,206,216.0,2,0,2,35,183.0,199.4,15,20,6,2.0,RTD,Tyson Fury
-Tyson Fury,Lee Swaby,won,20,206,216.0,3,0,3,32,188.0,199.4,23,22,11,4.0,RTD,Tyson Fury
-Joey Abell,Tyson Fury,lost,32,193.0,193.0,29,7,28,25,206,216.0,21,0,15,4.0,KO/TKO,Tyson Fury
-Marcel Zeller,Tyson Fury,lost,35,185.0,199.4,21,3,20,20,206,216.0,1,0,1,3.0,KO/TKO,Tyson Fury
-Martin Rogan,Tyson Fury,lost,40,191.0,199.4,14,2,7,23,206,216.0,17,0,12,5.0,KO/TKO,Tyson Fury
-Zack Page,Tyson Fury,lost,37,183.0,199.4,21,32,7,22,206,216.0,12,0,9,8.0,UD,Tyson Fury
-Vinny Maddalone,Tyson Fury,lost,38,188.0,199.4,35,7,26,23,206,216.0,18,0,13,5.0,KO/TKO,Tyson Fury
+Kubrat Pulev,Rydell Booker,won,38,194,202.0,27,1,14,38,191.0,201.0,26,2,13,0.0,UD,Kubrat Pulev
+Tyson Fury,John McDermott,won,21,206,216.0,10,0,8,30,191.0,199.414634146341,25,6,16,9.0,KO/TKO,Tyson Fury
+Tyson Fury,Scott Belshaw,won,20,206,216.0,5,0,5,23,201.0,199.414634146341,10,1,7,2.0,KO/TKO,Tyson Fury
+Tyson Fury,Hans-Joerg Blasko,won,21,206,216.0,9,0,7,36,195.0,199.414634146341,9,3,6,1.0,KO/TKO,Tyson Fury
+Tyson Fury,Steve Cunningham,won,24,206,216.0,20,0,14,36,190.0,208.0,25,5,12,7.0,KO/TKO,Tyson Fury
+Tyson Fury,Christian Hammer,won,26,206,216.0,23,0,17,27,189.0,198.0,17,3,10,8.0,RTD,Tyson Fury
+Tyson Fury,Neven Pajkic,won,23,206,216.0,16,0,11,34,191.0,199.414634146341,16,0,5,3.0,KO/TKO,Tyson Fury
+Tyson Fury,Mathew Ellis,won,20,206,216.0,4,0,4,35,182.0,199.414634146341,20,6,9,1.0,KO/TKO,Tyson Fury
+Tyson Fury,Otto Wallin,won,31,206,216.0,28,0,20,28,197.0,198.0,20,0,13,2.0,UD,Tyson Fury
+Tyson Fury,Bela Gyongyosi,won,20,206,216.0,0,0,0,22,192.0,199.414634146341,3,9,1,1.0,KO/TKO,Tyson Fury
+Tyson Fury,Marcelo Nascimento,won,22,206,216.0,13,0,9,30,196.0,199.414634146341,13,0,11,5.0,KO/TKO,Tyson Fury
+Tyson Fury,Kevin Johnson,won,24,206,216.0,19,0,14,33,191.0,208.0,28,2,13,2.0,UD,Tyson Fury
+Tyson Fury,Nicolai Firtha,won,23,206,216.0,15,0,10,32,198.0,199.414634146341,20,8,8,5.0,KO/TKO,Tyson Fury
+Tyson Fury,Tom Schwarz,won,30,206,216.0,27,0,19,25,197.0,199.414634146341,24,0,16,2.0,KO/TKO,Tyson Fury
+Tyson Fury,Francesco Pianeta,won,30,206,216.0,26,0,19,33,196.0,203.0,35,4,21,0.0,Unknown,Tyson Fury
+Tyson Fury,Daniil Peretyatko,won,20,206,216.0,2,0,2,35,183.0,199.414634146341,15,20,6,2.0,RTD,Tyson Fury
+Tyson Fury,Lee Swaby,won,20,206,216.0,3,0,3,32,188.0,199.414634146341,23,22,11,4.0,RTD,Tyson Fury
+Tyson Fury,Joey Abell,won,25,206,216.0,21,0,15,32,193.0,193.0,29,7,28,4.0,KO/TKO,Tyson Fury
+Tyson Fury,Marcel Zeller,won,20,206,216.0,1,0,1,35,185.0,199.414634146341,21,3,20,3.0,KO/TKO,Tyson Fury
+Tyson Fury,Martin Rogan,won,23,206,216.0,17,0,12,40,191.0,199.414634146341,14,2,7,5.0,KO/TKO,Tyson Fury
+Tyson Fury,Aleksandrs Selezens,won,20,206,216.0,6,0,6,29,188.0,199.414634146341,3,6,1,3.0,KO/TKO,Tyson Fury
+Tyson Fury,Zack Page,won,22,206,216.0,12,0,9,37,183.0,199.414634146341,21,32,7,8.0,UD,Tyson Fury
+Tyson Fury,Vinny Maddalone,won,23,206,216.0,18,0,13,38,188.0,199.414634146341,35,7,26,5.0,KO/TKO,Tyson Fury
 Wladimir Klitschko,David Haye,won,35,198,206.0,55,3,48,30,191.0,198.0,25,1,23,2.0,UD,Wladimir Klitschko
 Wladimir Klitschko,Jameel McCline,won,26,198,206.0,39,1,35,32,198.0,208.0,28,2,16,0.0,RTD,Wladimir Klitschko
 Wladimir Klitschko,Alexander Povetkin,won,37,198,206.0,60,3,51,34,188.0,191.0,26,0,18,2.0,UD,Wladimir Klitschko
-Francesco Pianeta,Wladimir Klitschko,lost,28,196.0,203.0,28,0,15,37,198,206.0,59,3,50,6.0,KO/TKO,Wladimir Klitschko
-Bryant Jennings,Wladimir Klitschko,lost,30,191.0,213.0,19,0,10,39,198,206.0,63,3,53,2.0,UD,Wladimir Klitschko
-Monte Barrett,Wladimir Klitschko,lost,29,191.0,198.0,23,1,14,24,198,206.0,33,1,30,7.0,KO/TKO,Wladimir Klitschko
-Carlos Monroe,Wladimir Klitschko,lost,33,198.0,204.0,11,6,7,22,198,206.0,20,0,17,6.0,KO/TKO,Wladimir Klitschko
-Sultan Ibragimov,Wladimir Klitschko,lost,32,188.0,193.0,22,0,17,31,198,206.0,49,3,43,2.0,UD,Wladimir Klitschko
-Jean Marc Mormeck,Wladimir Klitschko,lost,39,181.0,188.0,36,4,22,35,198,206.0,56,3,48,4.0,KO/TKO,Wladimir Klitschko
-Biko Botowamungu,Wladimir Klitschko,lost,40,190.0,193.0,9,5,9,21,198,206.0,10,0,9,4.0,DQ,Wladimir Klitschko
-Carlos Monroe,Wladimir Klitschko,lost,32,198.0,204.0,8,2,5,20,198,206.0,4,0,4,6.0,DQ,Wladimir Klitschko
-Kubrat Pulev,Wladimir Klitschko,lost,33,194.0,202.0,20,0,11,38,198,206.0,62,3,52,5.0,KO/TKO,Wladimir Klitschko
-Ray Mercer,Wladimir Klitschko,lost,41,185.0,196.0,30,4,22,26,198,206.0,38,1,34,6.0,KO/TKO,Wladimir Klitschko
-Samuel Peter,Wladimir Klitschko,lost,25,188.0,196.0,24,0,21,29,198,206.0,44,3,39,2.0,UD,Wladimir Klitschko
-Najee Shaheed,Wladimir Klitschko,lost,30,184.0,188.0,16,0,8,22,198,206.0,19,0,16,1.0,KO/TKO,Wladimir Klitschko
-Tony Thompson,Wladimir Klitschko,lost,36,196.0,207.0,31,1,19,32,198,206.0,50,3,43,1.0,KO/TKO,Wladimir Klitschko
-Axel Schulz,Wladimir Klitschko,lost,30,191.0,193.0,26,3,11,23,198,206.0,28,1,25,8.0,KO/TKO,Wladimir Klitschko
-Marcus McIntyre,Wladimir Klitschko,lost,28,193.0,196.0,15,1,8,21,198,206.0,16,0,14,3.0,KO/TKO,Wladimir Klitschko
-Calvin Brock,Wladimir Klitschko,lost,31,188.0,196.0,29,0,22,30,198,206.0,46,3,40,7.0,KO/TKO,Wladimir Klitschko
-Eli Dixon,Wladimir Klitschko,lost,32,188.0,201.0,21,4,14,22,198,206.0,22,0,19,3.0,KO/TKO,Wladimir Klitschko
-Derrick Jefferson,Wladimir Klitschko,lost,33,198.0,208.0,23,2,19,24,198,206.0,35,1,31,2.0,KO/TKO,Wladimir Klitschko
-Eliseo Castillo,Wladimir Klitschko,lost,29,188.0,199.4,18,0,14,29,198,206.0,43,3,38,4.0,KO/TKO,Wladimir Klitschko
-Eddie Chambers,Wladimir Klitschko,lost,27,185.0,191.0,35,1,18,33,198,206.0,53,3,46,2.0,KO/TKO,Wladimir Klitschko
-Frans Botha,Wladimir Klitschko,lost,33,188.0,188.0,44,3,28,25,198,206.0,37,1,33,8.0,KO/TKO,Wladimir Klitschko
-Phil Jackson,Wladimir Klitschko,lost,35,185.0,201.0,43,8,39,23,198,206.0,29,1,26,2.0,KO/TKO,Wladimir Klitschko
-Alex Leapai,Wladimir Klitschko,lost,34,183.0,190.0,30,4,24,38,198,206.0,61,3,51,5.0,KO/TKO,Wladimir Klitschko
-Mariusz Wach,Wladimir Klitschko,lost,32,202.0,208.0,27,0,15,36,198,206.0,58,3,50,2.0,UD,Wladimir Klitschko
-Everett Martin,Wladimir Klitschko,lost,34,182.0,183.0,20,29,9,23,198,206.0,25,1,22,8.0,KO/TKO,Wladimir Klitschko
-Tony Thompson,Wladimir Klitschko,lost,40,196.0,207.0,36,2,24,36,198,206.0,57,3,49,6.0,KO/TKO,Wladimir Klitschko
-Steve Pannell,Wladimir Klitschko,lost,31,193.0,193.0,33,4,27,22,198,206.0,21,0,18,2.0,KO/TKO,Wladimir Klitschko
-Fabian Meza,Wladimir Klitschko,lost,27,187.0,188.0,4,1,1,20,198,206.0,0,0,0,1.0,KO/TKO,Wladimir Klitschko
-Wladimir Klitschko,Lamon Brewster,won,31,198,206.0,48,3,42,34,188.0,196.0,33,3,29,6.0,RTD,Wladimir Klitschko
-Troy Weida,Wladimir Klitschko,lost,24,191.0,191.0,6,1,6,20,198,206.0,3,0,3,3.0,KO/TKO,Wladimir Klitschko
-Lajos Eros,Wladimir Klitschko,lost,35,187.0,188.0,21,8,11,23,198,206.0,30,1,27,2.0,KO/TKO,Wladimir Klitschko
-Corrie Sanders,Wladimir Klitschko,won,37,193,196.0,38,2,28,26,198.0,206.0,40,1,36,2.0,KO/TKO,Corrie Sanders
-Bill Corrigan,Wladimir Klitschko,lost,33,193.0,193.0,10,12,7,20,198,206.0,2,0,2,1.0,KO/TKO,Wladimir Klitschko
-Fabio Eduardo Moli,Wladimir Klitschko,lost,34,194.0,199.4,29,2,17,27,198,206.0,40,2,36,1.0,KO/TKO,Wladimir Klitschko
-DaVarryl Williamson,Wladimir Klitschko,lost,36,193.0,203.0,20,2,17,28,198,206.0,42,3,38,5.0,Unknown,Wladimir Klitschko
-Danell Nicholson,Wladimir Klitschko,lost,36,193.0,203.0,42,4,32,27,198,206.0,41,2,37,4.0,KO/TKO,Wladimir Klitschko
-Tony LaRosa,Wladimir Klitschko,lost,31,178.0,183.0,31,15,18,23,198,206.0,26,1,23,1.0,KO/TKO,Wladimir Klitschko
-Cody Koch,Wladimir Klitschko,lost,25,188.0,188.0,25,1,21,22,198,206.0,18,0,15,4.0,KO/TKO,Wladimir Klitschko
-Ray Austin,Wladimir Klitschko,lost,36,198.0,203.0,24,3,16,30,198,206.0,47,3,41,2.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Francesco Pianeta,won,37,198,206.0,59,3,50,28,196.0,203.0,28,0,15,6.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Bryant Jennings,won,39,198,206.0,63,3,53,30,191.0,213.0,19,0,10,2.0,UD,Wladimir Klitschko
+Wladimir Klitschko,Monte Barrett,won,24,198,206.0,33,1,30,29,191.0,198.0,23,1,14,7.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Carlos Monroe,won,22,198,206.0,20,0,17,33,198.0,204.0,11,6,7,6.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Sultan Ibragimov,won,31,198,206.0,49,3,43,32,188.0,193.0,22,0,17,2.0,UD,Wladimir Klitschko
+Wladimir Klitschko,Jean Marc Mormeck,won,35,198,206.0,56,3,48,39,181.0,188.0,36,4,22,4.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Biko Botowamungu,won,21,198,206.0,10,0,9,40,190.0,193.0,9,5,9,4.0,DQ,Wladimir Klitschko
+Wladimir Klitschko,Carlos Monroe,won,20,198,206.0,4,0,4,32,198.0,204.0,8,2,5,6.0,DQ,Wladimir Klitschko
+Wladimir Klitschko,Kubrat Pulev,won,38,198,206.0,62,3,52,33,194.0,202.0,20,0,11,5.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Ray Mercer,won,26,198,206.0,38,1,34,41,185.0,196.0,30,4,22,6.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Samuel Peter,won,29,198,206.0,44,3,39,25,188.0,196.0,24,0,21,2.0,UD,Wladimir Klitschko
+Wladimir Klitschko,Najee Shaheed,won,22,198,206.0,19,0,16,30,184.0,188.0,16,0,8,1.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Tony Thompson,won,32,198,206.0,50,3,43,36,196.0,207.0,31,1,19,1.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Axel Schulz,won,23,198,206.0,28,1,25,30,191.0,193.0,26,3,11,8.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Marcus McIntyre,won,21,198,206.0,16,0,14,28,193.0,196.0,15,1,8,3.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Calvin Brock,won,30,198,206.0,46,3,40,31,188.0,196.0,29,0,22,7.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Eli Dixon,won,22,198,206.0,22,0,19,32,188.0,201.0,21,4,14,3.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Derrick Jefferson,won,24,198,206.0,35,1,31,33,198.0,208.0,23,2,19,2.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Eliseo Castillo,won,29,198,206.0,43,3,38,29,188.0,199.414634146341,18,0,14,4.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Eddie Chambers,won,33,198,206.0,53,3,46,27,185.0,191.0,35,1,18,2.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Frans Botha,won,25,198,206.0,37,1,33,33,188.0,188.0,44,3,28,8.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Phil Jackson,won,23,198,206.0,29,1,26,35,185.0,201.0,43,8,39,2.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Alex Leapai,won,38,198,206.0,61,3,51,34,183.0,190.0,30,4,24,5.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Mariusz Wach,won,36,198,206.0,58,3,50,32,202.0,208.0,27,0,15,2.0,UD,Wladimir Klitschko
+Wladimir Klitschko,Everett Martin,won,23,198,206.0,25,1,22,34,182.0,183.0,20,29,9,8.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Tony Thompson,won,36,198,206.0,57,3,49,40,196.0,207.0,36,2,24,6.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Steve Pannell,won,22,198,206.0,21,0,18,31,193.0,193.0,33,4,27,2.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Fabian Meza,won,20,198,206.0,0,0,0,27,187.0,188.0,4,1,1,1.0,KO/TKO,Wladimir Klitschko
 Lamon Brewster,Wladimir Klitschko,won,30,188,196.0,29,2,26,28,198.0,206.0,42,2,38,5.0,KO/TKO,Lamon Brewster
-David Bostice,Wladimir Klitschko,lost,28,196.0,193.0,22,1,12,24,198,206.0,32,1,29,2.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Troy Weida,won,20,198,206.0,3,0,3,24,191.0,191.0,6,1,6,3.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Lajos Eros,won,23,198,206.0,30,1,27,35,187.0,188.0,21,8,11,2.0,KO/TKO,Wladimir Klitschko
+Corrie Sanders,Wladimir Klitschko,won,37,193,196.0,38,2,28,26,198.0,206.0,40,1,36,2.0,KO/TKO,Corrie Sanders
+Wladimir Klitschko,Bill Corrigan,won,20,198,206.0,2,0,2,33,193.0,193.0,10,12,7,1.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Fabio Eduardo Moli,won,27,198,206.0,40,2,36,34,194.0,199.414634146341,29,2,17,1.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,DaVarryl Williamson,won,28,198,206.0,42,3,38,36,193.0,203.0,20,2,17,5.0,Unknown,Wladimir Klitschko
+Wladimir Klitschko,Danell Nicholson,won,27,198,206.0,41,2,37,36,193.0,203.0,42,4,32,4.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Tony LaRosa,won,23,198,206.0,26,1,23,31,178.0,183.0,31,15,18,1.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Cody Koch,won,22,198,206.0,18,0,15,25,188.0,188.0,25,1,21,4.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Ray Austin,won,30,198,206.0,47,3,41,36,198.0,203.0,24,3,16,2.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Lamon Brewster,won,31,198,206.0,48,3,42,34,188.0,196.0,33,3,29,6.0,RTD,Wladimir Klitschko
+Wladimir Klitschko,David Bostice,won,24,198,206.0,32,1,29,28,196.0,193.0,22,1,12,2.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Samuel Peter,won,34,198,206.0,54,3,47,30,188.0,196.0,34,3,27,0.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Chris Byrd,won,24,198,206.0,34,1,31,30,188.0,188.0,31,1,19,2.0,UD,Wladimir Klitschko
+Wladimir Klitschko,Charles Shufford,won,25,198,206.0,36,1,32,28,191.0,203.0,17,1,9,6.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Mark Wills,won,21,198,206.0,6,0,5,36,185.0,188.0,14,17,9,1.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Hasim Rahman,won,32,198,206.0,51,3,44,36,189.0,208.0,45,6,36,7.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Zoran Vujicic,won,22,198,206.0,24,1,21,37,193.0,198.0,14,0,6,1.0,KO/TKO,Wladimir Klitschko
+Wladimir Klitschko,Joseph Chingangu,won,23,198,206.0,27,1,24,32,192.0,198.0,18,4,13,4.0,RTD,Wladimir Klitschko
+Wladimir Klitschko,Ruslan Chagaev,won,33,198,206.0,52,3,45,30,185.0,188.0,25,0,17,9.0,RTD,Wladimir Klitschko
+Oscar Alan Perez,Jeffery Ward,won,20,170,null,1,0,1,null,null,null,0,1,0,4,KO/TKO,Oscar Alan Perez
+Oscar Alan Perez,Christian Marron,won,20,170,null,2,0,2,30,168,null,0,1,0,4,KO/TKO,Oscar Alan Perez
+Oscar Alan Perez,Omar Urieta,won,21,170,null,3,0,2,17,163,null,0,1,0,4,KO/TKO,Oscar Alan Perez
+Oscar Alan Perez,Waldo Zamudio,won,22,170,null,4,0,3,31,165,null,0,4,0,4,KO/TKO,Oscar Alan Perez
+Oscar Alan Perez,William Flenoy,draw,23,170,null,5,0,3,32,168,null,3,2,2,6,MD,Draw
+Oscar Alan Perez,Derrick Murray,won,24,170,null,6,0,4,36,170,null,19,1,1,8,UD,Oscar Alan Perez
+Oscar Alan Perez,Rafael Reyes,won,24,170,null,9,0,5,33,166,null,20,17,0,6,KO/TKO,Oscar Alan Perez
+Oscar Alan Perez,John Herrera,won,23,170,null,7,0,5,38,170,null,5,20,3,6,KO/TKO,Oscar Alan Perez
+Santana Draper,Tyler Murray,won,22,183,null,1,0,1,30,183,null,0,1,0,4,KO/TKO,Santana Draper
+Breyon Gorham,Alejandro Leon Martinez,won,17,173,null,1,0,0,19,173,null,1,8,0,4,UD,Breyon Gorham
+Breyon Gorham,Benjamin Hernandez,won,18,173,null,1,0,0,21,null,null,0,0,0,4,KO/TKO,Breyon Gorham
+Breyon Gorham,Jose Guerra,won,18,173,null,2,0,1,26,170,69,2,0,2,4,KO/TKO,Breyon Gorham
+Breyon Gorham,Guillermo Osorio Zarate,won,18,173,null,3,0,2,35,null,null,2,10,6,4,KO/TKO,Breyon Gorham
+Breyon Gorham,Juan Adrian Briones,won,20,173,null,4,0,3,31,null,null,7,1,6,4,KO/TKO,Breyon Gorham
+Breyon Gorham,Anthony Curtiss,won,20,173,null,5,0,4,36,178,null,2,6,0,6,KO/TKO,Breyon Gorham
+Breyon Gorham,Dunis Linan,won,21,173,null,6,0,5,41,null,null,25,50,6,8,KO/TKO,Breyon Gorham
+Breyon Gorham,Oswaldo Quintanilla Ramirez,won,22,173,null,7,0,6,24,null,null,9,6,0,8,KO/TKO,Breyon Gorham
+Breyon Gorham,Luis Manuel Baltazar,won,23,173,null,8,0,6,25,173,null,13,1,0,6,KO/TKO,Breyon Gorham
+Charles Baylor,Joel Munoz,won,27,178,null,1,0,1,27,168,null,0,1,0,4,KO/TKO,Charles Baylor
+Charles Baylor,Axel Martinez Vazquez,won,27,178,null,1,0,1,20,null,null,0,1,0,4,UD,Charles Baylor
+Charles Baylor,Duilio Guzman Ayala,won,28,178,null,2,0,2,21,null,null,0,1,0,4,KO/TKO,Charles Baylor
+Charles Baylor,Eduardo Alvarado,won,28,178,null,3,0,3,28,175,null,1,1,0,4,KO/TKO,Charles Baylor
+Charles Baylor,Austin Dulworth,won,28,178,null,4,0,3,25,180,null,1,0,0,4,UD,Charles Baylor
+Todd Manuel,Tyrone Dowdy,won,17,188,null,1,0,1,33,175,null,4,20,0,4,UD,Todd Manuel
+Todd Manuel,William Johnson,won,17,188,null,2,0,1,29,null,null,19,9,1,4,UD,Todd Manuel
+Todd Manuel,Tyrone Dowdy,won,17,188,null,2,0,1,34,175,null,4,22,0,4,UD,Todd Manuel
+Todd Manuel,Dominique Azeez,won,18,188,null,3,0,2,41,null,null,3,22,0,6,UD,Todd Manuel
+Hiromitsu Miura,Todd Manuel,lost,29,176,null,5,0,0,18,188,null,4,0,0,6,UD,Todd Manuel
+Todd Manuel,Travis Scott,lost,18,188,null,4,1,0,30,null,null,7,0,0,6,SD,Travis Scott
+Tristan Todd,Todd Manuel,lost,25,null,null,1,0,0,19,188,null,4,2,0,4,UD,Todd Manuel
+Todd Manuel,Marcus Clay,draw,20,188,null,4,3,0,40,null,null,2,3,0,4,MD,Draw
+Todd Manuel,Phillip Lars,won,21,188,null,5,4,0,28,188,null,2,6,0,4,TKO,Todd Manuel
+Todd Manuel,K Lon Spencer,won,21,188,null,6,4,0,29,null,null,4,0,0,4,UD,Todd Manuel
+Todd Manuel,Jay Krupp,MD,22,188,,10,4,1,32,182,178,17,8,0,6,MD,Todd Manuel
+Brian Carlos Castano,Todd Manuel,KO,25,171,173,8,0,8,23,188,188,10,6,1,6,KO,Brian Carlos Castano
+Emmanuel Medina,Todd Manuel,UD,29,181,182,14,0,8,25,188,188,15,15,1,8,UD,Emmanuel Medina
+Todd Manuel,Carlos Torres Lopez,KO,30,188,,19,18,1,38,185,,4,25,3,6,KO,Todd Manuel
+Serhii Bohachuk,Todd Manuel,TKO,23,183,185,7,0,6,25,188,188,15,14,1,6,TKO,Serhii Bohachuk
+Josesito Lopez,Todd Manuel,UD,32,177,175,33,7,30,24,188,188,12,11,1,6,UD,Josesito Lopez
+Todd Manuel,Larry Smith,UD,32,188,188,22,23,1,45,185,208,13,56,2,6,UD,Todd Manuel
+Todd Manuel,Larry Smith,UD,31,188,188,21,23,1,44,185,208,13,55,2,6,UD,Todd Manuel
+Jordan Panthen,Todd Manuel,KO,26,175,,3,0,3,31,188,188,21,22,1,6,KO,Jordan Panthen
+Austin Trout,Omir Rodriguez,won,38,179,183,36,5,19,30,null,null,13,10,1,8,UD,Austin Trout
+Austin Trout,Jose Sanchez Charles,won,37,179,183,35,5,19,29,null,null,20,2,1,8,UD,Austin Trout
+Austin Trout,Florin Cardos,draw,36,179,183,34,5,19,34,178,null,21,3,0,8,MD,Draw
+Austin Trout,Terrell Gausha,draw,33,179,183,31,5,18,31,178,187,21,1,10,10,SD,Draw
+Jarrett Hurd,Austin Trout,won,27,182,188,20,0,14,32,179,183,30,3,18,10,RTD,Jarrett Hurd
+Jermall Charlo,Austin Trout,won,26,185,187,23,0,18,30,179,183,30,3,18,12,UD,Jermall Charlo
+Erislandy Lara,Austin Trout,won,30,175,191,18,2,12,28,179,183,26,1,14,12,UD,Erislandy Lara
+Saul Alvarez,Austin Trout,won,22,171,179,41,0,30,27,179,183,26,0,14,12,UD,Saul Alvarez
+Saul Alvarez,Austin Trout,won,22,171,179,41,0,30,27,179,183,26,0,14,12,UD,Saul Alvarez
+Ruben Padilla,Erik Rafael Esquivel,won,29,179,177,17,2,11,27,168,178,16,8,10,4,KO/TKO,Ruben Padilla
+Rigoberto Alvarez,Erik Rafael Esquivel,won,30,180,187,20,0,13,26,168,178,16,7,10,4,KO/TKO,Rigoberto Alvarez
+Craig McEwan,Erik Rafael Esquivel,won,25,185,191,9,0,6,26,168,178,16,7,10,8,UD,Craig McEwan
+Erik Rafael Esquivel,Marco Antonio Rubio,lost,25,168,178,16,8,10,26,178,178,36,1,30,9,KO/TKO,Marco Antonio Rubio
+Ruben Padilla,Erik Rafael Esquivel,draw,26,179,177,14,0,10,24,168,178,14,6,8,12,PTS,Draw
+Erik Rafael Esquivel,Jose de la Luz Martinez,won,23,168,178,13,4,9,19,178,177,5,1,3,9,KO/TKO,Erik Rafael Esquivel
+Nagy Aguilera,Hugo Lomeli,won,35,191,195,21,11,14,41,175,188,20,17,1,8,UD,Nagy Aguilera
+Rolando Soto,Hugo Lomeli,won,25,188,74,5,0,5,41,175,188,20,16,1,4,RTD,Rolando Soto
+Geovany Bruzon,Hugo Lomeli,won,23,193,203,4,0,4,40,175,188,20,15,1,6,TKO,Geovany Bruzon
+Chris Norrad,Hugo Lomeli,won,34,191,74,15,0,7,38,175,188,20,12,1,6,TKO,Chris Norrad
+Hugo Lomeli,Andres Salcedo,won,32,175,188,19,11,14,24,Null,Null,3,0,0,3,KO,Hugo Lomeli
+Hugo Lomeli,Daniel Aguirre,won,32,175,188,17,11,11,21,Null,Null,2,0,0,10,UD,Hugo Lomeli
+Santiago Ramos,Hugo Lomeli,won,Null,Null,Null,3,2,2,31,175,188,11,10,1,10,UD,Santiago Ramos
+Albert Onolunose,Victor Manuel Palacios,won,37,178,Null,21,1,11,38,Null,Null,10,16,11,8.0,UD,Albert Onolunose
+Louisbert Altidor,Victor Manuel Palacios,won,31,Null,Null,5,2,4,38,Null,Null,10,15,11,6.0,KO,Louisbert Altidor
+Juan Carlos Raygosa,Victor Manuel Palacios,won,27,168,173,11,10,7,37,Null,Null,10,14,11,6.0,UD,Juan Carlos Raygosa
+Victor Manuel Palacios,Ruben Rodriguez,won,32,Null,Null,9,5,6,26,Null,Null,Null,Null,Null,2.0,KO,Victor Manuel Palacios
+Victor Manuel Palacios,Jose Ventura Hernandez,won,31,Null,Null,8,4,Null,Null,Null,Null,2,0,Null,11.0,TKO,Victor Manuel Palacios
+Antonio Duarte,Victor Manuel Palacios,won,18,Null,Null,1,0,1,28,Null,Null,1,1,Null,2.0,KO,Antonio Duarte
+Victor Manuel Palacios,Mario Alberto Altamirano Becerra,won,30,Null,Null,4,3,3,23,Null,Null,4,3,Null,2.0,KO,Victor Manuel Palacios
+Gilberto Ramirez,Joe Smith Jr.,won,32,188,75,44,1,30,34,183,76,28,4,22,10,UD,Gilberto Ramirez
+Joe Smith Jr.,Steve Geffrard,won,32,183,76,27,3,21,31,188,78,18,2,12,9,KO,Joe Smith Jr.
+Steve Geffrard,Damian Ezequiel Bonelli,won,32,188,78,20,3,12,44,179,70,24,12,10,6,KO,Steve Geffrard
+Rafal Wolczecki,Damian Ezequiel Bonelli,won,27,179,70.5,11,0,6,46,179,70,24,13,10,6,KO,Rafal Wolczecki
+Imran Haddabah,Alex Theran,won,29,193,76,12,0,9,33,182,76,23,13,15,8,KO,Imran Haddabah
+Lawrence King,Vaughn Williams,won,27,188,76,16,1,9,36,183,80,12,10,8,2,KO,Lawrence King
+Omar Ulises Huerta,Abraham Gomez,won,28,185,Null,14,0,12,40,Null,Null,23,42,15,5,KO,Omar Ulises Huerta
