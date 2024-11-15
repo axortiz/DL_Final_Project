@@ -1,5 +1,5 @@
-from model import load_and_process_data
-from model import BoxingMatchPredictor
+from data_src import load_and_process_data
+from model_src import BoxingMatchPredictor
 import torch
 
 
