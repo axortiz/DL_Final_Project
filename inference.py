@@ -3,7 +3,7 @@ from model_src import BoxingMatchPredictor
 import torch
 
 
-X_new, _ = load_and_process_data('data_src/new_data.csv')
+X_new, _ = load_and_process_data('data_src/inference_data.csv')
 
 
 def load_model(input_size, num_classes, model_path="best_model.pth"):
@@ -15,7 +15,7 @@ def load_model(input_size, num_classes, model_path="best_model.pth"):
 
 input_size = X_new.shape[1]
 num_classes = 3  # Should be the same as during training
-model = load_model(input_size, num_classes, model_path='best_model.pth')
+model = load_model(input_size, num_classes, model_path='best_model_kfold.pth')
 
 X_new_tensor = torch.tensor(X_new, dtype=torch.float32)
 
