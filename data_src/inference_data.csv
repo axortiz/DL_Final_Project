@@ -1,2 +1,5 @@
 f_boxer,s_boxer,f_boxer_result,f_boxer_age,f_boxer_height,f_boxer_reach,f_boxer_won,f_boxer_lost,f_boxer_KOs,s_boxer_age,s_boxer_height,s_boxer_reach,s_boxer_won,s_boxer_lost,s_boxer_KOs,matchRounds,fightEnd,winner
-Mike Tyson, Jake Paul, null, 58, 178, 180, 50, 6, 44, 27, 185, 193, 10, 1, 7, 12, null, null
+Mike Tyson, Jake Paul, null, 58, 178, 180, 50, 6, 44, 27, 185, 193, 10, 1, 7, 8, null, null
+Artur Beterbiev,Dmitrii Bivol,null,39,182,185,20,0,20,33,183,183,23,0,12,null,null,null
+Katie Taylor,Amanda Serrano,null,38,165,168,23,1,6,36,166,166,47,2,31,null,null,null
+Mario Barrios,Abel Ramos,null,29,183,180,28,2,18,33,175,175,28,5,22,null,null,null

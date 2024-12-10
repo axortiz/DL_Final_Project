@@ -19,9 +19,14 @@ class BoxingDataset(Dataset):
     
 
 
-def load_and_process_data(filepath):
+def load_and_process_data(filepath, preserve_names=False):
     # Load data
     df = pd.read_csv(filepath)
+    
+    # Store boxer names if needed
+    boxer_names = None
+    if preserve_names:
+        boxer_names = df[['f_boxer', 's_boxer']].values
     
     # Replace 'null' strings with NaN
     df.replace('null', np.nan, inplace=True)
@@ -68,4 +73,7 @@ def load_and_process_data(filepath):
     X = df.drop(['winner', 'winner_encoded'], axis=1).values
     y = df['winner_encoded'].values
     
+    # Return names along with features if requested
+    if preserve_names:
+        return X, y, boxer_names
     return X, y
