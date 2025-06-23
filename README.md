@@ -1,233 +1,271 @@
-# Boxing Match Predictor
+# Boxing Match Predictor: Advanced ML-Powered Fight Outcome Prediction System
 
-## Project Description
+## Project Overview
 
-The **Boxing Match Predictor** is a machine learning project aimed at forecasting the outcomes of boxing matches. Utilizing both neural network architectures (Multi-Layer Perceptron - MLP) and gradient boosting techniques (LightGBM), this project analyzes boxer statistics and historical match data to provide accurate predictions. It supports various training methodologies, including standard training, k-fold cross-validation, and LightGBM-specific training, offering flexibility and robustness in model development.
+The **Boxing Match Predictor** is a sophisticated machine learning system designed to forecast boxing match outcomes with high precision. This project leverages both deep learning architectures (Multi-Layer Perceptron - MLP) and state-of-the-art gradient boosting techniques (LightGBM) to analyze comprehensive boxer statistics and historical match data. The system employs robust validation methods including k-fold cross-validation to ensure reliable and generalizable predictions.
+
+### Key Features
+
+- **Dual Model Architecture**: Combines the power of neural networks and gradient boosting
+- **Advanced Cross-Validation**: Implements 5-fold stratified cross-validation for robust model evaluation
+- **Comprehensive Data Analysis**: Processes extensive boxer statistics and historical match data
+- **Flexible Inference System**: Supports multiple model types and custom data inputs
+- **Rich Visualization**: Detailed performance metrics and training progress visualization
+
+## Model Performance Visualization
+
+### MLP Model Performance
+![Training vs Validation Accuracy (MLP)](plots/training_validation_accuracy_mlp.png)
+*Figure 1: MLP Model's Training and Validation Accuracy Over Time*
+
+![Training vs Validation Loss (MLP)](plots/training_validation_loss_mlp.png)
+*Figure 2: MLP Model's Training and Validation Loss Curves*
+
+### K-Fold Cross-Validation Results
+![Loss Plots Across Folds](plots/loss_plots.png)
+*Figure 3: Loss Curves Across Different K-Fold Splits*
+
+![Average Loss Performance](plots/average_loss_plot.png)
+*Figure 4: Average Loss Performance Across All Folds*
+
+### LightGBM Model Performance
+![LightGBM Loss Plots](plots/lgb_loss_plots.png)
+*Figure 5: LightGBM Training Progress*
+
+![LightGBM Average Loss](plots/lgb_average_loss_plot.png)
+*Figure 6: LightGBM Average Loss Performance*
+
+<!-- ![LightGBM Accuracy Distribution](plots/lgb_accuracy_distribution.png)
+*Figure 7: Distribution of Prediction Accuracies in LightGBM Model* -->
 
 ## Table of Contents
 
-- [Project Description](#project-description)
+- [Project Overview](#project-overview)
 - [Installation](#installation)
 - [Data Preparation](#data-preparation)
-- [Training](#training)
-  - [Train with MLP](#train-with-mlp)
-  - [Train with K-Fold Cross-Validation](#train-with-k-fold-cross-validation)
-  - [Train with LightGBM](#train-with-lightgbm)
-- [Inference](#inference)
-  - [Using `inference.py`](#using-inferencepy)
-  - [Using `inference_lgb.py`](#using-inferencelgbpy)
+- [Model Training](#model-training)
+  - [MLP Training](#mlp-training)
+  - [K-Fold Cross-Validation](#k-fold-cross-validation)
+  - [LightGBM Training](#lightgbm-training)
+- [Inference System](#inference-system)
 - [Usage Examples](#usage-examples)
-- [Dependencies](#dependencies)
-- [License](#license)
+- [Technical Requirements](#technical-requirements)
 
 ## Installation
 
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/yourusername/boxing-match-predictor.git
-   cd boxing-match-predictor   ```
+   cd boxing-match-predictor
+   ```
 
-2. **Create a Virtual Environment (Optional but Recommended)**
+2. **Set Up Python Environment**
    ```bash
    python3 -m venv env
-   source env/bin/activate  # On Windows: env\Scripts\activate   ```
+   source env/bin/activate  # On Windows: env\Scripts\activate
+   ```
 
-3. **Install Required Dependencies**
+3. **Install Dependencies**
    ```bash
-   pip install -r requirements.txt   ```
-
-   *If `requirements.txt` is not present, you can install the necessary packages manually:*
-   ```bash
-   pip install torch torchvision numpy pandas scikit-learn lightgbm matplotlib   ```
+   pip install -r requirements.txt
+   ```
 
 ## Data Preparation
 
-Ensure that your data files are placed in the `data_src/` directory:
+The system requires properly formatted and preprocessed data files in the `data_src/` directory:
 
-- **Training Data:** `data_src/train.csv`
-- **Validation Data:** `data_src/validation.csv`
-- **Combined Data for K-Fold and LightGBM:** `data_src/combined_data.csv`
-- **Inference Data:** `data_src/inference_data.csv`
+- `train.csv`: Primary training dataset
+- `validation.csv`: Validation dataset for model evaluation
+- `combined_data.csv`: Unified dataset for k-fold and LightGBM training
+- `inference_data.csv`: Test dataset for predictions
 
-The data should include boxer statistics and match outcomes, properly formatted and preprocessed.
+## Model Training
 
-## Training
+### MLP Training
 
-### Train with MLP
-
-To train the standard Multi-Layer Perceptron (MLP) model, run:
+Train the neural network model with optimized hyperparameters:
 
 ```bash
 python train.py
 ```
 
-This script will:
+Features:
+- Automated data normalization
+- Dynamic learning rate adjustment
+- Best model checkpoint saving
+- Performance visualization
 
-- Load and normalize the training and validation data.
-- Initialize the MLP model.
-- Train the model for a specified number of epochs.
-- Save the best model as `best_model.pth`.
+### K-Fold Cross-Validation
 
-### Train with K-Fold Cross-Validation
-
-To train the model using 5-fold cross-validation, run:
+Execute robust 5-fold cross-validation training:
 
 ```bash
 python train_k_fold.py
 ```
 
-This script will:
+Benefits:
+- Stratified fold splitting for balanced training
+- Comprehensive model evaluation
+- Automated best model selection
+- Detailed performance visualization across folds
 
-- Perform 5-fold stratified cross-validation on the combined dataset.
-- Train the MLP model on each fold.
-- Save the best model across all folds as `best_model_kfold.pth`.
-- Generate loss plots for each fold and the average performance.
+### LightGBM Training
 
-### Train with LightGBM
-
-To train a LightGBM model with 5-fold cross-validation, run:
+Train the gradient boosting model with cross-validation:
 
 ```bash
 python train_k_lgb.py
 ```
 
-This script will:
+Advantages:
+- High-speed training with GPU support
+- Feature importance analysis
+- Robust handling of missing values
+- Advanced regularization techniques
 
-- Perform 5-fold stratified cross-validation on the combined dataset.
-- Train the LightGBM model on each fold.
-- Save the best LightGBM model as `best_model_lgb.txt`.
-- Generate loss plots for each fold and the average performance.
+## Inference System
 
-## Inference
-
-### Using `inference.py`
-
-The `inference.py` script allows you to perform inference using either the standard MLP model or the K-Fold trained model.
-
-**Running Inference:**
+### MLP/K-Fold Model Inference
 
 ```bash
 python inference.py --model_type [kfold|mlp] [--model_path PATH] [--data_path PATH]
 ```
 
-**Arguments:**
+Options:
+- `--model_type`: Select between `kfold` or `mlp` architectures
+- `--model_path`: Custom model file path (optional)
+- `--data_path`: Custom inference data path (optional)
 
-- `--model_type`: Type of model to use for inference. Choose between `kfold` and `mlp`.
-- `--model_path`: (Optional) Path to the model file. Defaults to `best_model_kfold.pth` for `kfold` or `best_model.pth` for `mlp`.
-- `--data_path`: (Optional) Path to the inference data CSV file. Defaults to `data_src/inference_data.csv`.
-
-**Examples:**
-
-1. **Using the K-Fold Model with Default Path:**
-
-   ```bash
-   python inference.py --model_type kfold
-   ```
-
-2. **Using the MLP Model with Default Path:**
-
-   ```bash
-   python inference.py --model_type mlp
-   ```
-
-3. **Specifying a Custom Model Path:**
-
-   ```bash
-   python inference.py --model_type mlp --model_path path/to/custom_model.pth
-   ```
-
-4. **Specifying a Custom Data Path:**
-
-   ```bash
-   python inference.py --model_type kfold --data_path path/to/custom_inference_data.csv
-   ```
-
-### Using `inference_lgb.py`
-
-The `inference_lgb.py` script allows you to perform inference using the trained LightGBM model.
-
-**Running Inference:**
+### LightGBM Model Inference
 
 ```bash
 python inference_lgb.py
 ```
 
-**Description:**
-
-- This script loads the LightGBM model from `best_model_lgb.txt` by default.
-- It processes the inference data from `data_src/inference_data.csv`.
-- It outputs the predicted winners along with confidence scores and probability distributions.
-
-**Customization:**
-
-To use different model or data paths, modify the `MODEL_PATH` and `INFERENCE_DATA_PATH` variables in the script or adjust the script to accept command-line arguments similarly to `inference.py`.
+Features:
+- Probability distribution output
+- Confidence scoring
+- Fast batch processing
+- Detailed prediction analysis
 
 ## Usage Examples
 
-1. **Train the MLP Model:**
-
+1. **Standard MLP Training:**
    ```bash
    python train.py
    ```
 
-2. **Train with 5-Fold Cross-Validation:**
-
+2. **Cross-Validation Training:**
    ```bash
    python train_k_fold.py
    ```
 
-3. **Train with LightGBM:**
-
+3. **LightGBM Training:**
    ```bash
    python train_k_lgb.py
    ```
 
-4. **Run Inference with MLP Model:**
-
+4. **MLP Model Inference:**
    ```bash
    python inference.py --model_type mlp
    ```
 
-5. **Run Inference with K-Fold Model:**
-
+5. **K-Fold Model Inference:**
    ```bash
    python inference.py --model_type kfold
    ```
 
-6. **Run Inference with LightGBM:**
-
+6. **LightGBM Inference:**
    ```bash
    python inference_lgb.py
    ```
 
-## Dependencies
+## Technical Requirements
 
-Ensure you have the following Python packages installed:
-
+### Core Dependencies
 - Python 3.6+
-- numpy
-- pandas
-- scikit-learn
-- torch
-- lightgbm
-- matplotlib
+- PyTorch (Latest stable)
+- LightGBM
+- NumPy
+- Pandas
+- Scikit-learn
+- Matplotlib
 
-Install all dependencies using:
+### Installation
 
 ```bash
 pip install -r requirements.txt
 ```
 
-*Sample `requirements.txt`:*
+Required packages:
+```
+torch>=1.9.0
+lightgbm>=3.3.0
+numpy>=1.19.5
+pandas>=1.3.0
+scikit-learn>=0.24.2
+matplotlib>=3.4.3
+```
 
-```
-numpy
-pandas
-scikit-learn
-torch
-lightgbm
-matplotlib
-```
+## Challenges and Future Improvements
+
+### Current Challenges
+
+#### 1. Data Limitations
+- **Limited Dataset Size**
+  - Restricted model performance due to small sample size
+  - Challenges in achieving robust generalization
+  - Increased risk of overfitting
+
+- **Class Imbalance Issues**
+  - Difficulty in predicting "draw" outcomes in MLP and K-Fold models
+  - Bias towards more frequently occurring classes
+  - Required special handling in model architecture
+
+#### 2. Model Adaptations
+- **LightGBM Specific Adjustments**
+  - Modified class weights to reduce penalties for "draw" predictions
+  - Increased model complexity to better handle edge cases
+  - Implemented custom penalties to prevent excessive draw predictions
+
+### Future Improvements
+
+#### 1. Data Enhancement
+- **Dataset Expansion**
+  - Collect additional historical match data
+  - Implement data augmentation techniques
+  - Create synthetic samples while maintaining data integrity
+
+- **Feature Engineering**
+  - Incorporate advanced features:
+    - Recent match performance trends
+    - Opponent strength metrics
+    - Match context and conditions
+    - Fighter career trajectories
+    - Weight class transition history
+
+#### 2. Model Optimization
+- **Advanced Training Techniques**
+  - Implement sophisticated hyperparameter optimization
+  - Explore ensemble methods:
+    - Model stacking
+    - Blending LightGBM with neural networks
+    - Voting classifiers with weighted predictions
+
+- **Architecture Improvements**
+  - Experiment with different neural network architectures
+  - Implement attention mechanisms for feature importance
+  - Develop custom loss functions for better handling of draws
+
+#### 3. System Enhancements
+- **Real-time Processing**
+  - Develop streaming data pipeline for live updates
+  - Implement real-time prediction adjustments
+
+- **Interpretability**
+  - Add feature importance visualization
+  - Implement SHAP (SHapley Additive exPlanations) values
+  - Create detailed prediction explanation system
 
 ## License
 
